@@ -63,7 +63,7 @@ subbtn.addEventListener("submit",()=>{
     score--;
     if(score<1){score=0;}
     updateLocatStorage();
-    message=`currect answer is ${result}`;
+    message=`Your answer ${result} is wrong. current answer is: ${num1}*${num2} `;
     st='danger';
     localStorage.setItem("msg",JSON.stringify(message));
     localStorage.setItem("status",JSON.stringify(st));
