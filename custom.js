@@ -42,8 +42,11 @@ if(!step || score<=20){
 }
 
 document.querySelector(".step").innerText=step;
+// Celebration step up and down
 
-
+if(score==21 || score==31 ||score==41 || score==51){
+    startCelebrate();
+}
 
 var question=`What is ${num1} multiply by ${num2}  ?`;
 document.querySelector(".question h2").innerText=question;
