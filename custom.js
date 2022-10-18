@@ -85,6 +85,7 @@ showMassage(message,st);
 
 
 //  Celebrate Step up and down 
+var intervalid;
 var container = document.querySelector("body");
 function getRandomLocation() {
     const width = window.innerWidth
